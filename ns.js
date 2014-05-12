@@ -1,3 +1,5 @@
+"use strict";
+
 var MUC_BASE = "http://jabber.org/protocol/muc";
 
 module.exports = {

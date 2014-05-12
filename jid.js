@@ -1,23 +1,29 @@
+"use strict";
+
 //
 // parseJid
 //
 function parseJid(jid) {
-	var sp = jid.split("/");
-	var bare = sp[0];
+	var
+		sp   = jid.split("/"),
+		bare = sp[0],
+		name,
+		domain,
+		resource;
 	if(sp.length > 1) {
-		var resource = sp.slice(1).join("/");
+		resource = sp.slice(1).join("/");
 	}
 	else {
-		var resource = undefined;
+		resource = undefined;
 	}
 	var nd = bare.split("@");
 	if(nd.length > 1) {
-		var name = nd.slice(0, nd.length - 1).join("@");
-		var domain = nd[nd.length - 1];
+		name = nd.slice(0, nd.length - 1).join("@");
+		domain = nd[nd.length - 1];
 	}
 	else {
-		var name = undefined;
-		var domain = nd[0];
+		name = undefined;
+		domain = nd[0];
 	}
 	return {
 		bare: bare,
