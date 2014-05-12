@@ -1,0 +1,11 @@
+{
+	"name": "mrfagalot",
+	"author": "lumirayz <lumirayz@gmail.com>",
+	"version": "0.0.1",
+	"description": "XMPP bot with a markov chain-based AI",
+	"dependencies": {
+		"underscore": "~1.6.0",
+		"node-xmpp-client": "~1.0.0-alpha2",
+		"ltx": "~0.5.0"
+	}
+}
